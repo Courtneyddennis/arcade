@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Pacifico&family=Raleway:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Pacifico&family=Press+Start+2P&family=Raleway:wght@100;400&display=swap');
+
+
+
+
+button{
+    padding:10px;
+    margin: 10px;
+    /* font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Pacifico', cursive; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    border-radius: 15px;
+   
+}
+
+table{
+    display: flex;
+    align-items: center;
+    justify-content: last baseline;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+
+
+}
+
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    background-color: rgb(74, 74, 80);
+    border-radius: 20px;
+    padding: 25px;
+    color: whitesmoke;
+    /* font-family: 'Press Start 2P', cursive;
+    font-family: 'Raleway', sans-serif; */
+    font-family: 'IBM Plex Mono', monospace;
+    
+   
+}
+
+ .board {
+        display:grid;
+        flex-basis: auto;
+        justify-content: center;
+        height: 50%;
+        width: 44%;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(74, 74, 80);
+        margin: 10px  auto;
+        padding: 20px 2px;
+    }
+
+
+
+
+.box{
+    display: flex; 
+    flex-basis: 0%;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    font-size: 100px;
+    height:200px;
+    width: 200px;
+    border: 15px solid rgb(20, 20, 63);
+    margin: 8px;
+    padding: 5px;
+    font-family: 'Press Start 2P', cursive;
+    /* font-family: 'IBM Plex Mono', monospace; */
+    color: rgb(74, 74, 80);
+    cursor: pointer;
+    
+}
+
+.container{
+    display: flex;
+    flex-basis: auto;
+    width:100%
+
+}
