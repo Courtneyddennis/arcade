@@ -3,7 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Pacifico&family=Press+Start+2P&family=Raleway:wght@100;400&display=swap');
 
 
-
+body{
+    background-color: rgb(223, 217, 217);
+    
+}
 
 button{
     padding:10px;
@@ -13,19 +16,32 @@ button{
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     border-radius: 15px;
+    background-color:rgb(74, 74, 80);
+    color:aliceblue;
+    border: solid rgb(20, 20, 63);
+    
    
+}
+
+button:hover{
+    background-color: aliceblue;
+    color:rgb(20, 20, 63);
+    
 }
 
 table{
     display: flex;
     align-items: center;
-    justify-content: last baseline;
-    /* font-family: 'IBM Plex Mono', monospace; */
-    /* font-family: 'Pacifico', cursive; */
+    justify-content: first baseline;
     font-family: 'Raleway', sans-serif;
     font-size: 35px;
+    
+}
 
-
+td{ 
+    
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -38,9 +54,9 @@ h1{
     border-radius: 20px;
     padding: 25px;
     color: whitesmoke;
-    /* font-family: 'Press Start 2P', cursive;
-    font-family: 'Raleway', sans-serif; */
     font-family: 'IBM Plex Mono', monospace;
+    border:solid rgb(20, 20, 63) 15px;
+    margin:0px;
     
    
 }
@@ -55,6 +71,7 @@ h1{
         background-color: rgb(74, 74, 80);
         margin: 10px  auto;
         padding: 20px 2px;
+        position: relative;
     }
 
 
@@ -73,7 +90,6 @@ h1{
     margin: 8px;
     padding: 5px;
     font-family: 'Press Start 2P', cursive;
-    /* font-family: 'IBM Plex Mono', monospace; */
     color: rgb(74, 74, 80);
     cursor: pointer;
     
@@ -82,6 +98,34 @@ h1{
 .container{
     display: flex;
     flex-basis: auto;
-    width:100%
+    width:100%;
+    margin-bottom: 50px;
 
 }
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    color: rgb(20, 20, 63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+th{
+    margin: 20px;
+    padding: 15px;
+}
+
+input{
+    margin: 15px;
+    padding: 10px;
+    width: 300px;
+    height: 25px;
+    border: 5px solid rgb(20, 20, 63) ;
+    border-radius: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+}
+
