@@ -129,19 +129,21 @@ function addPlayer(Name){
 
 
 // AI dumb bot
-    const indexChosen = Math.random()*botMoves.length;
+   
     console.log("indexChosen", indexChosen);
     
 
 function botMoves(){
-    let botBox = document.getElementById(indexChosen);
+    
     let botMoves = [];
     for(let i=0; i<gameBoard.length; i++){
         if (gameBoard[i]==""){
-           
+            botMoves.push(i)
         }
-         botMoves.push(i)
+       
     }
+    const indexChosen = Math.floor(Math.random()*botMoves.length);
+    let botBox = document.getElementById(indexChosen);
     
     pickBox(botBox,indexChosen);
     whoWon()
