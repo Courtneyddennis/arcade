@@ -63,6 +63,7 @@ function boxClick(event){
 
 
 function pickBox(box, index){
+    console.log("index",index)
     gameBoard[index]= currentPlayer;
     box.textContent = currentPlayer;
     if(gameBoard[index]!== currentPlayer){
@@ -76,17 +77,19 @@ function pickBox(box, index){
 
 
 function nextPlayer(){
+    console.log("start turn as", currentPlayer)
 
     if (currentPlayer === "X"){
         currentPlayer = "O"
     }else{
         currentPlayer = "X"
     }
-
+    console.log("end turn as", currentPlayer)
     if(playing == true){
         gameResult.textContent = `${currentPlayer}'s Turn!`;
         if(playingBot == true && currentPlayer =="O"){
             botMoves()
+            console.log("bot played")
     }
    
     }
@@ -130,22 +133,25 @@ function addPlayer(Name){
 
 // AI dumb bot
    
-    console.log("indexChosen", indexChosen);
+    
     
 
 function botMoves(){
     
     let botMoves = [];
+    console.log(gameBoard)
     for(let i=0; i<gameBoard.length; i++){
         if (gameBoard[i]==""){
             botMoves.push(i)
         }
        
     }
+    console.log(botMoves)
     const indexChosen = Math.floor(Math.random()*botMoves.length);
-    let botBox = document.getElementById(indexChosen);
+    console.log("indexChosen", botMoves[indexChosen]);
+    let botBox = document.getElementById(botMoves[indexChosen]);
     
-    pickBox(botBox,indexChosen);
+    pickBox(botBox,botMoves[indexChosen]);
     whoWon()
 
 }
